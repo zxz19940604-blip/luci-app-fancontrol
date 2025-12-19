@@ -5,7 +5,7 @@
 'require uci';
 
 const THERMAL_FILE_PLACEHOLDER = '/sys/devices/virtual/thermal/thermal_zone0/temp';
-const FAN_FILE_PLACEHOLDER = '/sys/devices/platform/pwm-fan/hwmon/hwmon0/pwm1';
+const FAN_FILE_PLACEHOLDER = '/sys/devices/platform/pwm-fan/hwmon/hwmon1/pwm1';
 
 async function readFile(filePath) {
     try {
@@ -73,3 +73,4 @@ return view.extend({
         return m.render();
     }
 });
+
